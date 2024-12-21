@@ -21,28 +21,33 @@ const CartCard = ({ item }) => {
   };
 
   return (
-    <div className="card flex justify-between h-full items-start border-b-2 gap-5 p-2 mt-4">
+    <div className="card flex bg-white justify-between h-full items-start border-b-2 gap-5 p-2 mt-4">
       <div className="image">
-        <img src={item.image} alt="cart-product-image" className="w-[8rem]" />
+        <img
+          src={item.image}
+          loading="lazy"
+          alt="cart-product-image"
+          className="w-[150px] h-[150px] object-contain"
+        />
       </div>
-      <div className="info w-full h-full font-Popins flex flex-col justify-between">
+      <div className="info font-Popins flex flex-col justify-between">
         <h1 className="text-md md:text-2xl font-semibold">{item.title}</h1>
         <p className="text-xs text-gray-600">{item.category}</p>
-        <div className="flex items-center h-full mt-4 justify-between">
+        <div className="flex items-center mt-10 justify-between">
           <p className="text-md md:text-xl">
             Price : ${item.price * item.quantity}
           </p>
-          <div className="btn flex items-center justify-center gap-2 border-2 px-2 py-1">
+          <div className="btn flex items-center justify-center gap-2 border-2">
             <button
               onClick={handleIncreaseCartQuant}
-              className="w-5 h-5 p-1 text-center border-r-2 flex justify-center items-center active:bg-zinc-300"
+              className="px-4 py-2 text-center border-r-2 flex justify-center items-center active:bg-zinc-300"
             >
               +
             </button>
             <p>{item.quantity}</p>
             <button
               onClick={handleDecreaseCartQuant}
-              className="w-5 h-5 p-1 text-center border-l-2 flex justify-center items-center active:bg-zinc-300"
+              className="px-4 py-2 text-center border-l-2 flex justify-center items-center active:bg-zinc-300"
             >
               -
             </button>

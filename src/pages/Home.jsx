@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { TbTruckDelivery } from "react-icons/tb";
+import { MdOutlineSecurity } from "react-icons/md";
+import { RiSecurePaymentLine } from "react-icons/ri";
+import { GiReceiveMoney } from "react-icons/gi";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="pt-[72px] z-0">
+    <div className="pt-[72px] z-0 bg-white text-black">
       <div className="w-full md:px-[10rem] py-[5rem] flex items-center justify-center">
         <div className="flex flex-col md:flex-row items-center justify-cente gap-10 md:gap-5">
           <div className="text font-Popins flex flex-col justify-center items-center md:items-start">
@@ -26,6 +31,7 @@ const Home = () => {
             <img
               src="/images/shopping.jpg"
               alt="shopping image"
+              loading="lazy"
               className="w-full md:min-w-[28rem] shadow-lg"
             />
           </div>
@@ -74,6 +80,50 @@ const Home = () => {
           <FaExternalLinkAlt className="inline ml-2" />
         </Link>
       </div>
+      {/* <div className="text-blue-600 flex gap-6 items-center justify-center max-w-[10rem] md:max-w-[60rem] mx-auto py-12 font-Popins">
+        <div className="border flex flex-col items-center justify-center gap-4 md:px-[4rem] px-[2rem] py-[1rem] md:py-[5rem] text-5xl bg-[#eeee]">
+          <TbTruckDelivery className="p-2 text-6xl rounded-xl bg-white" />
+          <h1 className="text-lg md:text-xl">Super Fast Delivery</h1>
+        </div>
+        <div className="text-5xl flex flex-col gap-4">
+          <div className="border flex flex-col items-center justify-center gap-4 text-5x px-[2rem] p-[1rem] bg-[#eeee]">
+            <MdOutlineSecurity className="p-2 rounded-xl bg-white" />
+            <h1 className="text-xl">Non-Contact Shipping</h1>
+          </div>
+          <div className="border flex flex-col items-center justify-center gap-4 text-5xl px-[2rem] p-[1rem] bg-[#eeee]">
+            <GiReceiveMoney className="p-2 rounded-xl bg-white" />
+            <h1 className="text-xl">Money-back Guaranteed</h1>
+          </div>
+        </div>
+        <div className="border flex flex-col items-center justify-center gap-4 px-[1rem] py-[5rem] bg-[#eeee]">
+          <RiSecurePaymentLine className="p-2 text-6xl rounded-xl bg-white" />
+          <h1 className="text-xl">Super Secure Payment System</h1>
+        </div>
+      </div> */}
+      <div className="bg-[#eeee] px-[1rem] md:px-[10rem] py-[2rem] md:py-[5rem]">
+        <div className="flex flex-col items-center justify-center gap-5">
+          <h1 className="text-center md:text-xl font-Popins text-gray-600 py-4">
+            Trusted by 1000+ Companies
+          </h1>
+          <div className="w-full md:px-[10rem]">
+            <ul className="flex items-center justify-between border">
+              <li className="text-xs md:text-md font-semibold tracking-wider font-Popins text-gray-600 bg-gray-300 px-2 md:px-4 py-2 rounded-full">
+                amazon
+              </li>
+              <li className="text-xs md:text-md font-semibold tracking-wider font-Popins text-gray-600 bg-gray-300 px-2 md:px-4 py-2 rounded-full">
+                FlipKart
+              </li>
+              <li className="text-xs md:text-md font-semibold tracking-wider font-Popins text-gray-600 bg-gray-300 px-2 md:px-4 py-2 rounded-full">
+                Alibaba
+              </li>
+              <li className="text-xs md:text-md font-semibold tracking-wider font-Popins text-gray-600 bg-gray-300 px-2 md:px-4 py-2 rounded-full">
+                myntra
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

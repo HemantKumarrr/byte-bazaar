@@ -15,7 +15,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="pt-[72px]">
+    <div className="pt-[72px] bg-white text-black">
       <div className="px-4 md:px-[10rem] py-8 md:py-12">
         <div className="font-Popins flex items-center justify-between px-2">
           <Link to="/products" className="p-1 hover:bg-[#eeeeee] rounded-full">
@@ -33,7 +33,7 @@ const Cart = () => {
           </h1>
         </div>
         {myCartQuantity === 0 ? (
-          <div className="h-[calc(100vh-150px)] flex justify-center items-center">
+          <div className="h-[calc(100vh-300px)] flex justify-center items-center">
             <h1 className="text-4xl text-gray-500 font-Popins">Empty</h1>
           </div>
         ) : (

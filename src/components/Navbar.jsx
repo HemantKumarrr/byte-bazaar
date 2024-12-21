@@ -11,7 +11,9 @@ const Navbar = () => {
     <div className="header bg-white z-50 fixed w-full h-[72px] shadow-md flex items-center justify-between font-Popins px-[1rem] md:px-[5rem]">
       <div className="logo">
         <Link to="/">
-          <h1 className="text-xl md:text-2xl font-semibold">ByteBazaar</h1>
+          <h1 className="text-xl text-black md:text-2xl font-semibold">
+            ByteBazaar
+          </h1>
         </Link>
       </div>
       <div className="tabs flex items-center justify-center gap-5">
@@ -24,31 +26,31 @@ const Navbar = () => {
         >
           <Link
             to="/"
-            className="hover:bg-zinc-100 px-2 py-2 rounded-full transition-all delay-100"
+            className="hover:text-black text-gray-600 px-2 py-2 rounded-full transition-all ease-in"
           >
             <li onClick={() => setMenuToggle((prev) => !prev)}>Home</li>
           </Link>
           <Link
             to="/about"
-            className="hover:bg-zinc-100 px-2 py-2 rounded-full transition-all delay-100"
+            className="hover:text-black text-gray-600 px-2 py-2 rounded-full transition-all ease-in"
           >
             <li onClick={() => setMenuToggle((prev) => !prev)}>About</li>
           </Link>
           <Link
             to="/products"
-            className="hover:bg-zinc-100 px-2 py-2 rounded-full transition-all delay-100"
+            className="hover:text-black text-gray-600 px-2 py-2 rounded-full transition-all ease-in"
           >
             <li onClick={() => setMenuToggle((prev) => !prev)}>Products</li>
           </Link>
           <Link
             to="/contact"
-            className="hover:bg-zinc-100 px-2 py-2 rounded-full transition-all delay-100"
+            className="hover:text-black text-gray-600 px-2 py-2 rounded-full transition-all ease-in"
           >
             <li onClick={() => setMenuToggle((prev) => !prev)}>Contact</li>
           </Link>
         </ul>
-        <Link to="/cart" className="text-xl relative">
-          <FaShoppingCart />
+        <Link to="/cart" className="text-xl relative" title="Your Cart">
+          <FaShoppingCart className="text-black" />
           <p className="text-[10px] text-white absolute -top-4 px-1 w-5 h-5 flex justify-center items-center -right-2 bg-red-600 rounded-full">
             {myCartQuantity}
           </p>

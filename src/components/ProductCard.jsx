@@ -2,12 +2,24 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import AddToCartBtn from "./AddToCartBtn";
 import { addToCart } from "../store/features/cartSlice";
+import { Bounce, toast } from "react-toastify";
 
 const ProductCard = ({ item }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
     dispatch(addToCart(item));
+    toast.success("item added", {
+      position: "bottom-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
   };
 
   return (
