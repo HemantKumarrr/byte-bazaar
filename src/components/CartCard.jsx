@@ -22,18 +22,18 @@ const CartCard = ({ item }) => {
 
   return (
     <div className="card flex bg-white justify-between h-full items-start border-b-2 gap-5 p-2 mt-4">
-      <div className="image">
+      <div className="image w-[150px] h-[150px]">
         <img
           src={item.image}
           loading="lazy"
           alt="cart-product-image"
-          className="w-[150px] h-[150px] object-contain"
+          className="w-[150px] h-[150px] object-contain object-center"
         />
       </div>
       <div className="info font-Popins flex flex-col justify-between">
         <h1 className="text-md md:text-2xl font-semibold">{item.title}</h1>
         <p className="text-xs text-gray-600">{item.category}</p>
-        <div className="flex items-center mt-10 justify-between">
+        <div className="flex flex-col md:flex-row items-start gap-2 md:gap-0 md:items-center mt-10 justify-between">
           <p className="text-md md:text-xl">
             Price : ${item.price * item.quantity}
           </p>

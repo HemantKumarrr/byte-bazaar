@@ -44,7 +44,7 @@ const Cart = () => {
           </div>
         )}
       </div>
-      <div className="checkout font-Popins text-white bg-blue-800 fixed p-4 md:py-4 -bottom-1 left-0 w-full px-8 md:px-[5rem]">
+      <div className="checkout font-Popins text-white bg-blue-800 fixed p-4 md:py-6 -bottom-1 left-0 w-full px-8 md:px-[5rem]">
         <div className="flex flex-row items-center justify-between">
           <h1 className="text-[1rem] md:text-2xl">
             Total Price :{" "}

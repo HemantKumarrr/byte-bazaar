@@ -4,13 +4,13 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
-import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
 import Error404 from "./pages/Error404";
 import Navbar from "./components/Navbar";
 import { useDispatch } from "react-redux";
 import { setProducts } from "./store/features/productSlice";
 import { useState, useEffect } from "react";
+import SingleProduct from "./pages/SingleProduct";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);

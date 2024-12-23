@@ -37,7 +37,7 @@ const Footer = () => {
             <input
               type="text"
               placeholder="username@site.com"
-              className="input py-2 input-bordered join-item px-4 placeholder:text-gray-700 rounded-md"
+              className="input text-black py-2 input-bordered join-item px-4 placeholder:text-gray-700 rounded-md"
             />
             <button className="btn btn-primary join-item bg-purple-700 px-2 py-2 md:py-0 rounded-md">
               Subscribe
