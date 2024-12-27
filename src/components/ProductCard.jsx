@@ -26,11 +26,15 @@ const ProductCard = ({ item }) => {
     <div className="flex hover:scale-[1.050] transition-all ease-in -z-5">
       <div className="card w-[16rem] flex flex-col justify-between py-5 px-1 items-center flex-wrap border border-black rounded-lg shadow-md min-h-[20rem]">
         <Link to={`/single-product/${item.id}`} className="img">
-          <img
-            src={item.image}
-            alt="product-image"
-            className="w-[10rem] object-cover object-center h-[10rem]"
-          />
+          {!item.image ? (
+            <h1>Loading...</h1>
+          ) : (
+            <img
+              src={item.image}
+              alt="product-image"
+              className="w-[10rem] object-cover object-center h-[10rem]"
+            />
+          )}
         </Link>
         <div className="w-full flex flex-col justify-center items-center gap-4 px-6">
           <div className="w-full">

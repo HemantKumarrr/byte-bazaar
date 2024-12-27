@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { TbTruckDelivery } from "react-icons/tb";
-import { MdOutlineSecurity } from "react-icons/md";
-import { RiSecurePaymentLine } from "react-icons/ri";
-import { GiReceiveMoney } from "react-icons/gi";
+import FeaturesProvide from "../components/FeaturesProvide";
+
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -80,36 +78,8 @@ const Home = () => {
           <FaExternalLinkAlt className="inline ml-2" />
         </Link>
       </section>
-      <section className="w-full px-[5rem] py-[6rem] md:py-[8rem]">
-        <div className="flex items-center justify-center gap-2 md:gap-10">
-          <div className="bg-[#eeee] flex flex-col items-center justify-center gap-2 py-[3rem] md:py-[7rem] px-6 md:px-16 text-3xl text-blue-600">
-            <TbTruckDelivery />
-            <h1 className="text-xs text-center md:text-xl font-semibold">
-              Super Fast and Free Delivery
-            </h1>
-          </div>
-          <div className="flex flex-col text-center items-center justify-center gap-2 md:gap-5 text-4xl text-blue-600">
-            <div className="bg-[#eeee] flex flex-col items-center justify-center gap-2 md:gap-5 py-2 md:py-8 px-8 md:px-12 text-xl md:text-4xl text-blue-600">
-              <MdOutlineSecurity />
-              <h1 className="text-xs md:text-xl font-semibold">
-                Non-contact Shipping
-              </h1>
-            </div>
-            <div className="bg-[#eeee] flex flex-col items-center justify-center gap-2 md:gap-5 py-2 md:py-8 px-8 md:px-12 text-xl md:text-4xl text-blue-600">
-              <GiReceiveMoney />
-              <h1 className="text-xs md:text-xl font-semibold">
-                Money-back Guaranteed
-              </h1>
-            </div>
-          </div>
-          <div className="bg-[#eeee] flex flex-col items-center justify-center gap-5 py-[3rem] md:py-[7rem] px-6 md:px-16 text-2xl text-blue-600">
-            <RiSecurePaymentLine />
-            <h1 className="text-xs text-center md:text-xl font-semibold">
-              Super Secure Payment System
-            </h1>
-          </div>
-        </div>
-      </section>
+      <FeaturesProvide />
+
       <section className="bg-[#eeee] px-[2rem] md:px-[10rem] py-[4rem] md:py-[6rem]">
         <div className="flex flex-col items-center justify-center md:gap-10 gap-2">
           <h1 className="text-center md:text-xl font-Popins text-gray-600 py-4">
@@ -117,17 +87,36 @@ const Home = () => {
           </h1>
           <div className="w-full md:px-[10rem]">
             <ul className="flex items-center justify-between">
-              <li className="text-xs md:text-lg font-semibold tracking-wider font-Popins text-gray-600 bg-gray-300 px-2 md:px-4 py-2 rounded-full">
+              {/* <li className="text-xs md:text-lg font-semibold tracking-wider font-Popins text-gray-600 bg-gray-300 px-2 md:px-4 py-2 rounded-full">
                 amazon
+              </li> */}
+              <li>
+                <img
+                  src="https://e7.pngegg.com/pngimages/956/937/png-clipart-amazon-com-logo-brand-amazon-publishing-amazon-books-design-text-logo.png"
+                  alt="amazon-image"
+                  className="grayscale w-[4rem] md:scale-[2]"
+                />
               </li>
-              <li className="text-xs md:text-lg font-semibold tracking-wider font-Popins text-gray-600 bg-gray-300 px-2 md:px-4 py-2 rounded-full">
-                FlipKart
+              <li className="flex items-center justify-center">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtpRldH30QCdFVFm5uWLxwN2Cf2dLPUcyPog&s"
+                  alt="amazon-image"
+                  className="grayscale w-[3.5rem] md:scale-[1.5]"
+                />
               </li>
-              <li className="text-xs md:text-lg font-semibold tracking-wider font-Popins text-gray-600 bg-gray-300 px-2 md:px-4 py-2 rounded-full">
-                Alibaba
+              <li className="flex items-center justify-center">
+                <img
+                  src="https://w7.pngwing.com/pngs/653/102/png-transparent-alibaba-round-logo-tech-companies-thumbnail.png"
+                  alt="amazon-image"
+                  className="grayscale w-[2.6rem] md:scale-[1.6]"
+                />
               </li>
-              <li className="text-xs md:text-lg font-semibold tracking-wider font-Popins text-gray-600 bg-gray-300 px-2 md:px-4 py-2 rounded-full">
-                myntra
+              <li className="flex items-center justify-center">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT80Cwo7xyL9j_E5CA9k6Hor7FGIH0tVCqNw&s"
+                  alt="amazon-image"
+                  className="grayscale w-[2.6rem] md:scale-[1.8]"
+                />
               </li>
             </ul>
           </div>
